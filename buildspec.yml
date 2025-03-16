@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Installing dependencies for node v20"
+      - npm i react
+      - npm i vite
+      - "Dependencies installed"
+  pre-build:
+    commands:
+      - echo "Install node v20"
+      - npm install 
+      - echo "Node v2 installed"
+  build:
+    commands:
+      - echo "Run build"
+      - npm run build
+      - echo "Project built"
+
+artifacts:
+  base-directory: dist/basic-websites-project
+  files:
+    - '**/*'
+  
+  
