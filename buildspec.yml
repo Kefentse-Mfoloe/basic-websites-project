@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "Install node v20"
       - npm install 
-      - echo "Node v2 installed"
+      - echo "Node v20 installed"
   build:
     commands:
       - echo "Run build"
@@ -21,7 +21,6 @@ phases:
       - echo "Project built"
 
 artifacts:
-  base-directory: src
   files:
     - '**/*'
   
