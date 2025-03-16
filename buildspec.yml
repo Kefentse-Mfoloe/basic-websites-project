@@ -8,7 +8,7 @@ phases:
       - echo "Installing dependencies for node v20"
       - npm i react
       - npm i vite
-      - "Dependencies installed"
+      - echo "Dependencies installed"
   pre_build:
     commands:
       - echo "Install node v20"
