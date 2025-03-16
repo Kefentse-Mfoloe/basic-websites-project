@@ -21,7 +21,7 @@ phases:
       - echo "Project built"
 
 artifacts:
-  base-directory: dist/basic-websites-project
+  base-directory: build
   files:
     - '**/*'
   
