@@ -13,7 +13,7 @@ function App() {
   }
   
   return (
-    <>
+    <div>
       <Header />
       <section id="core-concepts">
         <ul>
@@ -36,7 +36,7 @@ function App() {
           </pre>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
