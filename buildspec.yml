@@ -20,10 +20,16 @@ phases:
       - npm run build
       - echo "Project built"
 
+# artifacts:
+#   base-directory: dist
+#   files:
+#     - '**/*'
+#     - 'src/**/*'
 artifacts:
-  base-directory: dist
   files:
-    - '**/*'
+    - 'dist/**/*'
     - 'src/**/*'
+    - 'appspec.yml'
+    - 'deploy-scripts/**/*'
   
   
