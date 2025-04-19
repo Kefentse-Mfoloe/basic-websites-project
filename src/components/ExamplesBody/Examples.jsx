@@ -1,7 +1,8 @@
 import { useState } from "react";
-import TabButton from "../TabButton";
-import { EXAMPLES } from "../data";
-import { TAB_BUTTONS } from "../data";
+import TabButton from "./TabButton";
+import { EXAMPLES } from "../../data";
+import { TAB_BUTTONS } from "../../data";
+import Example from "./Expample";
 
 function Examples() {
     const [ selectedTopic, setSelectedTopic ] = useState('components');
@@ -22,13 +23,7 @@ function Examples() {
             >{tabButtonItem}</TabButton>
           ))}
         </menu>
-        <div id="tab-content">
-          <h3>{EXAMPLES[selectedTopic].title}</h3>
-          <p>{EXAMPLES[selectedTopic].desciption}</p>
-          <pre>
-            <code>{EXAMPLES[selectedTopic].code}</code>
-          </pre>
-        </div>
+        <Example {...EXAMPLES[selectedTopic]} />
       </section>
     );
 }
