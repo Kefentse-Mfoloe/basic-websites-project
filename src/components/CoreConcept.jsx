@@ -1,4 +1,4 @@
-function Concept({image, title, description}) {
+function CoreConcept({image, title, description}) {
     return (
       <li>
         <img src={image} alt={title}/>
@@ -8,4 +8,4 @@ function Concept({image, title, description}) {
     );
 }
 
-export default Concept;
+export default CoreConcept;

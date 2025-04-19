@@ -80,3 +80,5 @@ function Counter() {
 }`,
   },
 };
+
+export const TAB_BUTTONS = ["components", "jsx", "props", "state"];
