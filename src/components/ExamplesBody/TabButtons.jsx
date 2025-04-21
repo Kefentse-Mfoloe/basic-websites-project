@@ -8,7 +8,7 @@ function TabButtons ( { selectedTopic, handleClick }) {
           <TabButton
             key={tabButtonItem}
             isSelected={selectedTopic === tabButtonItem}
-            onSelect={() => handleClick(tabButtonItem)}
+            onClick={() => handleClick(tabButtonItem)}
           >
             {tabButtonItem}
           </TabButton>
